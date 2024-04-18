@@ -15,4 +15,5 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(2); // Ladda nästa scen
     }
+
 }
