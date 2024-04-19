@@ -1,13 +1,13 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;  // Inkludera detta namespace för TextMesh Pro
+using TMPro; 
 
 public class Scene2_1_Controller : MonoBehaviour
 {
-    public GameObject inactiveImage;  // Referens till GameObject med inaktiv bild
-    public TextMeshProUGUI timerText;  // Referens till TextMeshPro-objektet
-    private float countdown = 10f;  // Startvärde för nedräkningen
+    public GameObject inactiveImage; 
+    public TextMeshProUGUI timerText;  
+    private float countdown = 10f; 
 
     void Start()
     {
@@ -18,19 +18,18 @@ public class Scene2_1_Controller : MonoBehaviour
     {
         while (countdown > 0)
         {
-            countdown -= Time.deltaTime;  // Minska countdown med tiden som gått sedan senaste frame
-            UpdateTimerDisplay(countdown);  // Uppdatera textdisplayen
+            countdown -= Time.deltaTime; 
+            UpdateTimerDisplay(countdown);  
             yield return null;
         }
 
-        SceneManager.LoadScene(0);  // Ladda om scen 0 när timern når 0
+        SceneManager.LoadScene(0);
     }
 
     void UpdateTimerDisplay(float currentTime)
     {
-        timerText.text = Mathf.Ceil(currentTime).ToString();  // Visa avrundat till närmaste heltal uppåt
+        timerText.text = Mathf.Ceil(currentTime).ToString(); 
 
-        // Ändra textfärg till röd under de sista 3 sekunderna, annars svart
         if (currentTime <= 3)
         {
             timerText.color = Color.red;
@@ -41,7 +40,6 @@ public class Scene2_1_Controller : MonoBehaviour
         }
     }
 
-    // Metod för att hantera knapptryck
     public void OnButtonPressed()
     {
         StartCoroutine(ShowInactiveImageAndSwitchScene());
@@ -49,13 +47,32 @@ public class Scene2_1_Controller : MonoBehaviour
 
     IEnumerator ShowInactiveImageAndSwitchScene()
     {
-        inactiveImage.SetActive(true);  // Aktiverar den inaktiva bilden
-        yield return new WaitForSeconds(3);  // Vänta 3 sekunder
-        SceneManager.LoadScene(0);  // Byt till scen 0
+        inactiveImage.SetActive(true); 
+        yield return new WaitForSeconds(3);  
+        SceneManager.LoadScene(0); 
     }
 
     public void OpenDoor()
     {
-        SceneManager.LoadScene(6);  // Ladda önskad scen
+        SceneManager.LoadScene(6); 
+    }
+
+    public void GoUpstairs()
+    {
+        SceneManager.LoadScene(7);
+    }
+
+    public GameObject firstImage;
+    public GameObject secondImage;
+
+    public void ActivateImages()
+    {
+        firstImage.SetActive(true); 
+        Invoke("ActivateSecondImage", 3f); 
+    }
+
+    void ActivateSecondImage()
+    {
+        secondImage.SetActive(true);
     }
 }
