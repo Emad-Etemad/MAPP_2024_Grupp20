@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 808255917}
   m_Layer: 5
   m_Name: OpenDoor
-  m_TagString: Untagged
+  m_TagString: OpenDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -184,9 +184,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 0.30588236}
-    m_HighlightedColor: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
-    m_PressedColor: {r: 0.5188679, g: 0.5164204, b: 0.5164204, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.5411765, g: 0.5411765, b: 0.5411765, a: 1}
+    m_PressedColor: {r: 0.3137255, g: 0.3137255, b: 0.3137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.78039217}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.13333334}
     m_ColorMultiplier: 1
@@ -206,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 808255918}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 942250589}
+        m_TargetAssemblyTypeName: Scen2_1_Controller, Assembly-CSharp
+        m_MethodName: OpenDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &808255918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,11 +335,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 942250585}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 765aab094ddfe4515ac33e9f187ee43a, type: 3}
+  m_Script: {fileID: 11500000, guid: c5ae38bbb14a749d29c7c343c717708f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inactiveImage: {fileID: 1704538664}
-  timerText: {fileID: 980540676}
 --- !u!1 &980540675
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,7 +529,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Go upstairs
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1137,9 +1147,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.9056604, g: 0.9056604, b: 0.9056604, a: 1}
-    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_PressedColor: {r: 0.7264151, g: 0.7229886, b: 0.7229886, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.5411765, g: 0.5411765, b: 0.5411765, a: 1}
+    m_PressedColor: {r: 0.3137255, g: 0.3137255, b: 0.3137255, a: 1}
     m_SelectedColor: {r: 0.8396226, g: 0.82774115, b: 0.82774115, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1161,8 +1171,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 942250589}
-        m_TargetAssemblyTypeName: Scene2_1, Assembly-CSharp
-        m_MethodName: OnButtonPressed
+        m_TargetAssemblyTypeName: Scen2_1_Controller, Assembly-CSharp
+        m_MethodName: GoUpstairs
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

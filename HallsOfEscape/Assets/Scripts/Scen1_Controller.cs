@@ -11,7 +11,7 @@ public class Scen1Controller : MonoBehaviour
     }
   public void ChoiceTwo() 
     {
-        //SceneManager.LoadScene(3);
+        SceneManager.LoadScene(5);
     }
 
 }

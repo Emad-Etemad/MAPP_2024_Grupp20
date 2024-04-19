@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;  // Inkludera detta namespace för TextMesh Pro
 
-public class Scene2_1 : MonoBehaviour
+public class Scen3 : MonoBehaviour
 {
     public GameObject inactiveImage;  // Referens till GameObject med inaktiv bild
     public TextMeshProUGUI timerText;  // Referens till TextMeshPro-objektet
@@ -53,4 +53,7 @@ public class Scene2_1 : MonoBehaviour
         yield return new WaitForSeconds(3);  // Vänta 3 sekunder
         SceneManager.LoadScene(0);  // Byt till scen 0
     }
+
 }
+
+
