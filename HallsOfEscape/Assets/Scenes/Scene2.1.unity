@@ -208,7 +208,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 942250589}
-        m_TargetAssemblyTypeName: Scen2_1_Controller, Assembly-CSharp
+        m_TargetAssemblyTypeName: Scene2_1_Controller, Assembly-CSharp
         m_MethodName: OpenDoor
         m_Mode: 1
         m_Arguments:
@@ -338,6 +338,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5ae38bbb14a749d29c7c343c717708f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inactiveImage: {fileID: 1704538664}
+  timerText: {fileID: 980540676}
 --- !u!1 &980540675
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,8 +471,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -785, y: 380}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -674, y: 380}
+  m_SizeDelta: {x: 250, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1143127717
 GameObject:
@@ -1170,17 +1172,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 942250589}
-        m_TargetAssemblyTypeName: Scen2_1_Controller, Assembly-CSharp
-        m_MethodName: GoUpstairs
-        m_Mode: 1
+      - m_Target: {fileID: 1704538664}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &2142654892
 MonoBehaviour:
@@ -1202,8 +1204,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 0}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
