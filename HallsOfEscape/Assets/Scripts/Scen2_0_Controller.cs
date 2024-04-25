@@ -21,7 +21,6 @@ public class Scen2_0_Controller : MonoBehaviour
 
     }
 
-
     public string sceneToLoad = "Scen2"; // Namnet på den scen som ska laddas efter fördröjningen
     public float delayInSeconds = 5f; // Fördröjningstid i sekunder
 

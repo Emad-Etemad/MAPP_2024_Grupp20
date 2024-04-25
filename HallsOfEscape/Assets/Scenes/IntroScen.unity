@@ -433,6 +433,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Scene1
   delayInSeconds: 5
+  endingToLoad: 
+  endingdelayInSeconds: 5
+  menuToLoad: 
+  menudelayInSeconds: 5
 --- !u!114 &692956236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,6 +449,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c57b4e45462146f39a292ed0ae741de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 0}
+  playButton: {fileID: 0}
 --- !u!1 &933659304
 GameObject:
   m_ObjectHideFlags: 0
