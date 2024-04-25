@@ -54,6 +54,14 @@ public class Scen3 : MonoBehaviour
         SceneManager.LoadScene(0);  // Byt till scen 0
     }
 
+    public void ChoiceOne_Scen_3()
+    {
+        SceneManager.LoadScene(8);
+    }
+    public void ChoiceTwo_Scen_3()
+    {
+        SceneManager.LoadScene(9);
+    }
 }
 
 

@@ -9,4 +9,9 @@ public class Scen4_Controller : MonoBehaviour
     {
         SceneManager.LoadScene(6);
     }
+
+    public void ChoiceTwo()
+    {
+        SceneManager.LoadScene(10);
+    }
 }
