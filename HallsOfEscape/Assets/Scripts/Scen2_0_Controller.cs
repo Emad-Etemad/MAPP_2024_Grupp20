@@ -31,7 +31,7 @@ public class Scen2_0_Controller : MonoBehaviour
 
     void LoadNextScene()
     {
-        SceneManager.LoadScene(3);// Ladda nästa scen
+        SceneManager.LoadScene(2);// Ladda nästa scen
     }
 
 }
