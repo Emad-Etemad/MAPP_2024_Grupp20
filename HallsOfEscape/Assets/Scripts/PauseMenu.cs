@@ -8,13 +8,14 @@ public class PauseMenu : MonoBehaviour
 {
 
     [SerializeField] GameObject pauseMenu;
-    private VideoPlayer videoPlayer;
+    [SerializeField] private VideoPlayer videoPlayer;
 
     public void Pause()
     {
-        pauseMenu.SetActive(true); 
+        pauseMenu.SetActive(true);
         Time.timeScale = 0f;
-        videoPlayer.Pause();
+        if (videoPlayer != null)
+            videoPlayer.Pause();
     }
 
     public void Menu()
@@ -27,7 +28,8 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
-        videoPlayer.Play();
+        if (videoPlayer != null)
+            videoPlayer.Play();
     }
 
     public void Restart()
