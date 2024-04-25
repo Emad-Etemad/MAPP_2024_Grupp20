@@ -2,15 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class PauseMenu : MonoBehaviour
 {
 
     [SerializeField] GameObject pauseMenu;
-   public void Pause()
+    private VideoPlayer videoPlayer;
+
+    public void Pause()
     {
         pauseMenu.SetActive(true); 
         Time.timeScale = 0f;
+        videoPlayer.Pause();
     }
 
     public void Menu()
@@ -23,6 +27,7 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
+        videoPlayer.Play();
     }
 
     public void Restart()
