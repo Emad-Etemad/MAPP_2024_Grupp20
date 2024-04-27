@@ -62,6 +62,12 @@ public class Scen3 : MonoBehaviour
     {
         SceneManager.LoadScene(9);
     }
+
+    public void Restart()
+    {
+        Time.timeScale = 1f;  // Reset time scale to normal
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }
 
 
