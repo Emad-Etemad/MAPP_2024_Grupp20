@@ -983,8 +983,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16adcd4a1fa20a34ebc68ba211072027, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Scene1
-  delayInSeconds: 5
 --- !u!1 &1997256181
 GameObject:
   m_ObjectHideFlags: 0
