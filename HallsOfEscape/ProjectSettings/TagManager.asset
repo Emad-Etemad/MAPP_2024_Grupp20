@@ -6,6 +6,7 @@ TagManager:
   tags:
   - OpenDoor
   - GoUpstairs
+  - VideoPlayer
   layers:
   - Default
   - TransparentFX
