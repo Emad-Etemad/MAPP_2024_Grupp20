@@ -38,7 +38,7 @@ public class VideoScript : MonoBehaviour
     public void choice2()
     {
         videoPlayer[0].Pause();
-        videoPlayer[1].targetCamera = camera.GetComponent<Camera>();
+        videoPlayer[2].targetCamera = camera.GetComponent<Camera>();
         index = 1;
         playVideo(index);
     }
@@ -46,8 +46,8 @@ public class VideoScript : MonoBehaviour
     public void choice3()
     {
         videoPlayer[0].Pause();
-        videoPlayer[1].targetCamera = camera.GetComponent<Camera>();
-        index = 1;
+        videoPlayer[3].targetCamera = camera.GetComponent<Camera>();
+        index = 2;
         playVideo(index);
     }
 }
