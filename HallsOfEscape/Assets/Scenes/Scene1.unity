@@ -588,9 +588,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2029075190}
-        m_TargetAssemblyTypeName: VideoScript, Assembly-CSharp
-        m_MethodName: choice2
+      - m_Target: {fileID: 1997256185}
+        m_TargetAssemblyTypeName: Scen1Controller, Assembly-CSharp
+        m_MethodName: ChoiceOne
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -862,9 +862,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2029075190}
-        m_TargetAssemblyTypeName: VideoScript, Assembly-CSharp
-        m_MethodName: choice3
+      - m_Target: {fileID: 1997256185}
+        m_TargetAssemblyTypeName: Scen1Controller, Assembly-CSharp
+        m_MethodName: ChoiceTwo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1015,6 +1015,7 @@ GameObject:
   - component: {fileID: 1997256184}
   - component: {fileID: 1997256183}
   - component: {fileID: 1997256182}
+  - component: {fileID: 1997256185}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1072,6 +1073,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1997256185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997256181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20d42813e28bdeb4e8ec3d82b40c43de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2029075189
 GameObject:
   m_ObjectHideFlags: 0
