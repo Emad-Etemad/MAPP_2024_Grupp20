@@ -285,9 +285,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 568980684}
-  - {fileID: 1229540285}
-  - {fileID: 1249639267}
+
   - {fileID: 551902500}
   - {fileID: 1391749981}
   m_Father: {fileID: 0}
@@ -766,7 +764,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551902499}
   m_CullTransparentMesh: 1
---- !u!1 &568980683
+
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -823,7 +821,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 8400000, guid: 6f3941c5cf00c40b389260df6be2d8a1, type: 2}
+  m_Texture: {fileID: 8400000, guid: eb00d2d648d854deb9142e3802954200, type: 2}
   m_UVRect:
     serializedVersion: 2
     x: 0
