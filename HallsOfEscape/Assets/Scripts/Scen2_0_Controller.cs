@@ -21,17 +21,17 @@ public class Scen2_0_Controller : MonoBehaviour
 
     }
 
-    public string sceneToLoad = "Scen2"; // Namnet pï¿½ den scen som ska laddas efter fï¿½rdrï¿½jningen
-    public float delayInSeconds = 5f; // Fï¿½rdrï¿½jningstid i sekunder
+    public string sceneToLoad = "Scen2"; // Namnet på den scen som ska laddas efter fördröjningen
+    public float delayInSeconds = 5f; // Fördröjningstid i sekunder
 
     void Start()
     {
-        Invoke("LoadNextScene", delayInSeconds); // Anropa LoadNextScene efter en viss fï¿½rdrï¿½jning
+        Invoke("LoadNextScene", delayInSeconds); // Anropa LoadNextScene efter en viss fördröjning
     }
 
     void LoadNextScene()
     {
-        SceneManager.LoadScene(3);// Ladda nï¿½sta scen
+        SceneManager.LoadScene(2);// Ladda nästa scen
     }
 
 }
