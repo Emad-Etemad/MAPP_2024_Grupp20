@@ -3,7 +3,11 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
+
 {
+    [SerializeField] private GameObject creditsPanel;
+    [SerializeField] private GameObject settingsPanel;
+    [SerializeField] private AudioClip startSound, settingsSound, creditsSound, closeSettingsSound, closeCreditsSound;
     //public GameObject pauseMenuUI;   // Referens till pausmenyn
     //public GameObject playButton;    // Referens till Play-knappen för att återuppta spelet
 
@@ -11,16 +15,47 @@ public class MainMenu : MonoBehaviour
     //{
     //    //playButton.SetActive(false); // Göm Play-knappen när spelet startar
     //}
+        private AudioSource audioSource;
+
+    public void Start()
+    {
+        audioSource.GetComponent<AudioSource>();
+    }
 
     public void LoadScene()
     {
         SceneManager.LoadScene(1); // Ladda nästa scen
+        audioSource.PlayOneShot(startSound, 0.5f);
+
     }
 
     public void LoadBackScene()
     {
         SceneManager.LoadScene(0); // Ladda nästa scen
     }
+    public void ShowCredits()
+    {
+        creditsPanel.SetActive(true);
+        audioSource.PlayOneShot(creditsSound, 0.5f);
+    }
+    public void closeCredits()
+    {
+        creditsPanel.SetActive(false);
+        audioSource.PlayOneShot(closeCreditsSound, 0.5f);
+    }
+
+    public void ShowSettings()
+    {
+        settingsPanel.SetActive(true);
+        audioSource.PlayOneShot(settingsSound, 0.5f);
+    }
+
+    public void closeSettings()
+    {
+        settingsPanel.SetActive(false);
+        audioSource.PlayOneShot(closeSettingsSound, 0.5f);
+    }
+
 
     //public void TogglePause()
     //{
