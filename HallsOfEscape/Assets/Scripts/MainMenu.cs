@@ -25,7 +25,7 @@ public class MainMenu : MonoBehaviour
     public void LoadScene()
     {
         SceneManager.LoadScene(1); // Ladda nästa scen
-        audioSource.PlayOneShot(startSound, 0.5f);
+        //audioSource.PlayOneShot(startSound, 0.5f);
 
     }
 
