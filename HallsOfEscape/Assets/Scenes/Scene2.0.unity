@@ -1317,50 +1317,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726877623}
   m_CullTransparentMesh: 1
---- !u!1 &1832751911
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1832751912}
-  - component: {fileID: 1832751913}
-  m_Layer: 0
-  m_Name: SceneLoaderForLoop
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1832751912
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1832751911}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 309.15433, y: 288.964, z: 8.060652}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1832751913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1832751911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16adcd4a1fa20a34ebc68ba211072027, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1895187775
 GameObject:
   m_ObjectHideFlags: 0
@@ -1518,6 +1474,7 @@ GameObject:
   - component: {fileID: 2004013773}
   - component: {fileID: 2004013772}
   - component: {fileID: 2004013771}
+  - component: {fileID: 2004013776}
   - component: {fileID: 2004013775}
   - component: {fileID: 2004013774}
   m_Layer: 5
@@ -1603,18 +1560,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1832751913}
-        m_TargetAssemblyTypeName: SceneManagerScript, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Scene2.0_Loop
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &2004013772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1679,6 +1624,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delayBeforeFadeIn: 7
   fadeInDuration: 3
+--- !u!114 &2004013776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004013769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8881f7bb50ac94af6b273e7effdbf703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myButton: {fileID: 2004013771}
+  backgroundVideoPlayer: {fileID: 612156521}
+  buttonVideoPlayer: {fileID: 301152595}
+  sceneToLoad: Scene1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1693,4 +1654,3 @@ SceneRoots:
   - {fileID: 69793678}
   - {fileID: 263758671}
   - {fileID: 1012167532}
-  - {fileID: 1832751912}
