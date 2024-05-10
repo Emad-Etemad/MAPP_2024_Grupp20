@@ -11,6 +11,7 @@ public class VideoScript : MonoBehaviour
     [SerializeField] private int[] sceneTransitions; // Indexer av scener att ladda efter varje video
     private int currentIndex = -1; // Startvärde satt till -1 för att indikera ingen video spelas initialt
 
+
     void Start()
     {
         // Kontrollera att det finns minst ett objekt i varje lista och att de är korrekt instansierade
@@ -81,4 +82,5 @@ public class VideoScript : MonoBehaviour
             Debug.LogError("Attempted to play video with invalid index: " + index);
         }
     }
+   
 }
