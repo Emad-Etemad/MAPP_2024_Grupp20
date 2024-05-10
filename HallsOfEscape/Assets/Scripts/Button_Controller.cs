@@ -5,20 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class ButtonController : MonoBehaviour
 {
+    public Button myButton;
     public VideoPlayer backgroundVideoPlayer;
     public VideoPlayer buttonVideoPlayer;
-    public string sceneToLoad;
+
+    public string sceneToLoad; // Variabel för att ange scenens namn från Unity-editorn
 
     void Start()
     {
-        Button[] buttons = FindObjectsOfType<Button>(); // Hämta alla knappar i scenen
-        foreach (Button button in buttons)
-        {
-            button.onClick.AddListener(() => OnButtonClick(button)); // Lägg till lyssnare för varje knapp
-        }
+        if (myButton == null)
+            myButton = GetComponent<Button>();
+
+        myButton.onClick.AddListener(OnButtonClick);
+
+        
     }
 
-    void OnButtonClick(Button clickedButton)
+    void OnButtonClick()
     {
         // Stoppa bakgrundsvideon om den redan spelas
         if (backgroundVideoPlayer.isPlaying)
@@ -27,6 +30,9 @@ public class ButtonController : MonoBehaviour
         // Stoppa knappvideon om den redan spelas
         if (buttonVideoPlayer.isPlaying)
             buttonVideoPlayer.Stop();
+
+        // Dölj knappen när videon spelas
+        myButton.gameObject.SetActive(false);
 
         // Dölj alla knappar när videon spelas
         Button[] buttons = FindObjectsOfType<Button>();
@@ -39,19 +45,16 @@ public class ButtonController : MonoBehaviour
         buttonVideoPlayer.Play();
 
         // Lyssna på händelsen när knappvideon har spelats klart
-        buttonVideoPlayer.loopPointReached += vp => OnButtonVideoEnd(clickedButton);
+        buttonVideoPlayer.loopPointReached += OnButtonVideoEnd;
     }
 
-    void OnButtonVideoEnd(Button clickedButton)
+    void OnButtonVideoEnd(UnityEngine.Video.VideoPlayer vp)
     {
-        // Förstör alla knappar
-        Button[] buttons = FindObjectsOfType<Button>();
-        foreach (Button button in buttons)
-        {
-            Destroy(button.gameObject);
-        }
+        // När knappvideon har spelats klart, förstör knappen
+        Destroy(myButton.gameObject);
 
         // Ladda den nya scenen som anges från Unity-editorn
         SceneManager.LoadScene(sceneToLoad);
     }
 }
+

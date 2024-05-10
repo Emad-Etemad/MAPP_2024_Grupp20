@@ -591,18 +591,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2029075192}
-        m_TargetAssemblyTypeName: VideoScript, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1144251243}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
@@ -975,9 +963,9 @@ GameObject:
   - component: {fileID: 1391749984}
   - component: {fileID: 1391749983}
   - component: {fileID: 1391749982}
+  - component: {fileID: 1391749987}
   - component: {fileID: 1391749986}
   - component: {fileID: 1391749985}
-  - component: {fileID: 1391749987}
   m_Layer: 5
   m_Name: Button_ChoiceTwo
   m_TagString: Untagged
@@ -1049,18 +1037,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2029075192}
-        m_TargetAssemblyTypeName: VideoScript, Assembly-CSharp
-        m_MethodName: PlayVideo
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1144251243}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
@@ -1111,7 +1087,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391749980}
   m_CullTransparentMesh: 1
---- !u!114 &1391749985
+--- !u!225 &1391749985
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391749980}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1391749986
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1125,7 +1113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delayBeforeFadeIn: 7
   fadeInDuration: 3
---- !u!114 &1391749986
+--- !u!114 &1391749987
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1140,18 +1128,6 @@ MonoBehaviour:
   backgroundVideoPlayer: {fileID: 2040051516}
   buttonVideoPlayer: {fileID: 818845627}
   sceneToLoad: Scene2.1
---- !u!225 &1391749987
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391749980}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &1511968807
 GameObject:
   m_ObjectHideFlags: 0
