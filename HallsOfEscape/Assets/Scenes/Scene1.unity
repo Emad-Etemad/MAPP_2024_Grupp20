@@ -517,6 +517,9 @@ GameObject:
   - component: {fileID: 551902503}
   - component: {fileID: 551902502}
   - component: {fileID: 551902501}
+  - component: {fileID: 551902506}
+  - component: {fileID: 551902505}
+  - component: {fileID: 551902504}
   m_Layer: 5
   m_Name: Button_ChoiceOne
   m_TagString: Untagged
@@ -590,8 +593,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2029075192}
         m_TargetAssemblyTypeName: VideoScript, Assembly-CSharp
-        m_MethodName: PlayVideo
-        m_Mode: 3
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -650,6 +653,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551902499}
   m_CullTransparentMesh: 1
+--- !u!225 &551902504
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551902499}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &551902505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551902499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547a3e148a073be45b26c0cabbbaa4c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayBeforeFadeIn: 7
+  fadeInDuration: 3
+--- !u!114 &551902506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551902499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8881f7bb50ac94af6b273e7effdbf703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myButton: {fileID: 551902501}
+  backgroundVideoPlayer: {fileID: 2040051516}
+  buttonVideoPlayer: {fileID: 937625590}
+  sceneToLoad: Scene2.0
 --- !u!1 &818845626
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,7 +728,7 @@ VideoPlayer:
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
-  m_RenderMode: 2
+  m_RenderMode: 1
   m_AspectRatio: 2
   m_DataSource: 0
   m_TimeUpdateMode: 2
@@ -697,7 +742,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0
   m_WaitForFirstFrame: 1
@@ -743,7 +788,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937625589}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 1f581b87a1e974315a4fc484d4f1d33f, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 342ec99df711a4853a13dec32d3f0737, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1511968809}
@@ -751,7 +796,7 @@ VideoPlayer:
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
-  m_RenderMode: 2
+  m_RenderMode: 1
   m_AspectRatio: 2
   m_DataSource: 0
   m_TimeUpdateMode: 2
@@ -765,7 +810,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0
   m_WaitForFirstFrame: 1
@@ -1360,7 +1405,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997256181}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20d42813e28bdeb4e8ec3d82b40c43de, type: 3}
   m_Name: 
@@ -1382,7 +1427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2029075191
 Transform:
   m_ObjectHideFlags: 0
@@ -1427,6 +1472,7 @@ GameObject:
   - component: {fileID: 2040051514}
   - component: {fileID: 2040051515}
   - component: {fileID: 2040051516}
+  - component: {fileID: 2040051517}
   m_Layer: 0
   m_Name: Video Player0
   m_TagString: VideoPlayer
@@ -1499,6 +1545,20 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &2040051517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040051512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22284caa674172448a1d505ff91160cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 1152399973}
+  videoPlayer: {fileID: 0}
 --- !u!1001 &5583396497768192183
 PrefabInstance:
   m_ObjectHideFlags: 0
