@@ -7,7 +7,8 @@ public class SceneLoader : MonoBehaviour
     {
         Scene1,
         Ending_3_Info,
-        Menu
+        Menu,
+        Game_Over
     }
 
     public SceneToLoad sceneToLoad; // Välj vilken scen som ska laddas från inspektören
@@ -39,6 +40,8 @@ public class SceneLoader : MonoBehaviour
                 return "Ending_3_Info";
             case SceneToLoad.Menu:
                 return "Menu";
+            case SceneToLoad.Game_Over:
+                return "Game_Over";
             default:
                 Debug.LogError("Unknown scene to load.");
                 return null;
