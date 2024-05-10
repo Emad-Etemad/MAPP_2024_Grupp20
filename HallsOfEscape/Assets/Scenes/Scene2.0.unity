@@ -396,12 +396,12 @@ VideoPlayer:
   m_VideoClip: {fileID: 32900000, guid: fd69d0f0f11ee48889566441e692a7b9, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 0}
+  m_TargetCamera: {fileID: 1916079783}
   m_TargetTexture: {fileID: 8400000, guid: 246cc81a04fb24a05ba5ea41953a913c, type: 2}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
-  m_RenderMode: 2
+  m_RenderMode: 1
   m_AspectRatio: 2
   m_DataSource: 0
   m_TimeUpdateMode: 2
@@ -718,6 +718,9 @@ GameObject:
   - component: {fileID: 624492647}
   - component: {fileID: 624492646}
   - component: {fileID: 624492645}
+  - component: {fileID: 624492650}
+  - component: {fileID: 624492649}
+  - component: {fileID: 624492648}
   m_Layer: 5
   m_Name: ChoiceTwo
   m_TagString: Untagged
@@ -789,18 +792,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1895187776}
-        m_TargetAssemblyTypeName: VideoScript, Assembly-CSharp
-        m_MethodName: PlayVideo
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: Scene6
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1012167531}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
@@ -851,6 +842,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624492643}
   m_CullTransparentMesh: 1
+--- !u!225 &624492648
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624492643}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &624492649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624492643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547a3e148a073be45b26c0cabbbaa4c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayBeforeFadeIn: 7
+  fadeInDuration: 3
+--- !u!114 &624492650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624492643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8881f7bb50ac94af6b273e7effdbf703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myButton: {fileID: 624492645}
+  backgroundVideoPlayer: {fileID: 612156521}
+  buttonVideoPlayer: {fileID: 786797713}
+  sceneToLoad: Scene6
 --- !u!1 &786797712
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,12 +912,12 @@ VideoPlayer:
   m_VideoClip: {fileID: 32900000, guid: 19ed2c0bf84b94605b12ab6da29d22d6, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 0}
+  m_TargetCamera: {fileID: 1916079783}
   m_TargetTexture: {fileID: 8400000, guid: 246cc81a04fb24a05ba5ea41953a913c, type: 2}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
-  m_RenderMode: 2
+  m_RenderMode: 1
   m_AspectRatio: 2
   m_DataSource: 0
   m_TimeUpdateMode: 2
@@ -1441,6 +1474,9 @@ GameObject:
   - component: {fileID: 2004013773}
   - component: {fileID: 2004013772}
   - component: {fileID: 2004013771}
+  - component: {fileID: 2004013776}
+  - component: {fileID: 2004013775}
+  - component: {fileID: 2004013774}
   m_Layer: 5
   m_Name: ChoiceOne
   m_TagString: Untagged
@@ -1512,18 +1548,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1895187776}
-        m_TargetAssemblyTypeName: VideoScript, Assembly-CSharp
-        m_MethodName: PlayVideo
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: Scene2.0_Loop
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1012167531}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
@@ -1574,6 +1598,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2004013769}
   m_CullTransparentMesh: 1
+--- !u!225 &2004013774
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004013769}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &2004013775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004013769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547a3e148a073be45b26c0cabbbaa4c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayBeforeFadeIn: 7
+  fadeInDuration: 3
+--- !u!114 &2004013776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004013769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8881f7bb50ac94af6b273e7effdbf703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myButton: {fileID: 2004013771}
+  backgroundVideoPlayer: {fileID: 612156521}
+  buttonVideoPlayer: {fileID: 301152595}
+  sceneToLoad: Scene1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
