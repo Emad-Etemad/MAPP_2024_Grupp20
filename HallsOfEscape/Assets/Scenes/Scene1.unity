@@ -691,7 +691,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8881f7bb50ac94af6b273e7effdbf703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myButton: {fileID: 551902501}
   backgroundVideoPlayer: {fileID: 2040051516}
   buttonVideoPlayer: {fileID: 937625590}
   sceneToLoad: Scene2.0
@@ -976,6 +975,9 @@ GameObject:
   - component: {fileID: 1391749984}
   - component: {fileID: 1391749983}
   - component: {fileID: 1391749982}
+  - component: {fileID: 1391749986}
+  - component: {fileID: 1391749985}
+  - component: {fileID: 1391749987}
   m_Layer: 5
   m_Name: Button_ChoiceTwo
   m_TagString: Untagged
@@ -1109,6 +1111,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391749980}
   m_CullTransparentMesh: 1
+--- !u!114 &1391749985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391749980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547a3e148a073be45b26c0cabbbaa4c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayBeforeFadeIn: 7
+  fadeInDuration: 3
+--- !u!114 &1391749986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391749980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8881f7bb50ac94af6b273e7effdbf703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundVideoPlayer: {fileID: 2040051516}
+  buttonVideoPlayer: {fileID: 818845627}
+  sceneToLoad: Scene2.1
+--- !u!225 &1391749987
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391749980}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1511968807
 GameObject:
   m_ObjectHideFlags: 0
