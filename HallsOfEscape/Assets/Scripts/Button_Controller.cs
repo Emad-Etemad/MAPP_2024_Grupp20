@@ -1,18 +1,37 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Video;
 
-public class NewBehaviourScript : MonoBehaviour
+public class ButtonController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Button myButton;
+    public VideoPlayer backgroundVideoPlayer;
+    public VideoPlayer buttonVideoPlayer;
+
     void Start()
     {
-        
+        if (myButton == null)
+            myButton = GetComponent<Button>();
+
+        myButton.onClick.AddListener(OnButtonClick);
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnButtonClick()
     {
-        
+        // Stoppa bakgrundsvideon om den redan spelas
+        if (backgroundVideoPlayer.isPlaying)
+            backgroundVideoPlayer.Stop();
+
+        // Stoppa knappvideon om den redan spelas
+        if (buttonVideoPlayer.isPlaying)
+            buttonVideoPlayer.Stop();
+
+        // Dölj knappen när videon spelas
+        myButton.gameObject.SetActive(false);
+
+        // Spela knappvideon
+        buttonVideoPlayer.Play();
     }
+
 }
+
