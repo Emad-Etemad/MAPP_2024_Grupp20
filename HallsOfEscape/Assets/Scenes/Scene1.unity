@@ -694,7 +694,7 @@ GameObject:
   - component: {fileID: 818845628}
   - component: {fileID: 818845627}
   m_Layer: 0
-  m_Name: Video Player3
+  m_Name: Video_WalkThroughCorridor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -762,7 +762,7 @@ GameObject:
   - component: {fileID: 937625591}
   - component: {fileID: 937625590}
   m_Layer: 0
-  m_Name: Video Player2
+  m_Name: Video_FetchTheKey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
