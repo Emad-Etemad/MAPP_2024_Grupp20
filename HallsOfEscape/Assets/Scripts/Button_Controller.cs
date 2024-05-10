@@ -1,12 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
 public class ButtonController : MonoBehaviour
 {
     public Button myButton;
     public VideoPlayer backgroundVideoPlayer;
     public VideoPlayer buttonVideoPlayer;
+
+    public string sceneToLoad; // Variabel för att ange scenens namn från Unity-editorn
 
     void Start()
     {
@@ -31,7 +34,17 @@ public class ButtonController : MonoBehaviour
 
         // Spela knappvideon
         buttonVideoPlayer.Play();
+
+        // Lyssna på händelsen när knappvideon har spelats klart
+        buttonVideoPlayer.loopPointReached += OnButtonVideoEnd;
     }
 
-}
+    void OnButtonVideoEnd(UnityEngine.Video.VideoPlayer vp)
+    {
+        // När knappvideon har spelats klart, förstör knappen
+        Destroy(myButton.gameObject);
 
+        // Ladda den nya scenen som anges från Unity-editorn
+        SceneManager.LoadScene(sceneToLoad);
+    }
+}
