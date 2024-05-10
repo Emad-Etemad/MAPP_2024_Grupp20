@@ -205,7 +205,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: 0
+<<<<<<< HEAD
   delayInSeconds: 15
+=======
+  delayInSeconds: 10
+>>>>>>> parent of 9a8b18b (Revert "Merge branch 'main' of https://github.com/Emad-Etemad/MAPP_2024_Grupp20")
 --- !u!1 &115773651
 GameObject:
   m_ObjectHideFlags: 0
