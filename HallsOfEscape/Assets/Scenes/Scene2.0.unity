@@ -379,7 +379,7 @@ GameObject:
   - component: {fileID: 301152596}
   - component: {fileID: 301152595}
   m_Layer: 0
-  m_Name: Video Player (2)
+  m_Name: Video_HeadToTheStairwell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -649,7 +649,7 @@ GameObject:
   - component: {fileID: 612156522}
   - component: {fileID: 612156521}
   m_Layer: 0
-  m_Name: Video Player
+  m_Name: Scene2.0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -895,7 +895,7 @@ GameObject:
   - component: {fileID: 786797714}
   - component: {fileID: 786797713}
   m_Layer: 0
-  m_Name: Video Player (1)
+  m_Name: Video_ProceedForward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
