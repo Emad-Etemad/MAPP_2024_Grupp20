@@ -1,31 +1,31 @@
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Video;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class SkipIntroController : MonoBehaviour
+public class SkipIntro : MonoBehaviour
 {
     public VideoPlayer videoPlayer; // Referens till VideoPlayer-komponenten
     public Button skipButton;       // Referens till UI-knappen
-    public float fastForwardSpeed = 3.0f; // Snabbspolningshastighet
 
     void Start()
     {
-        // Lägg till lyssnare till skipButton för att kalla på FastForwardVideo när den klickas
-        skipButton.onClick.AddListener(FastForwardVideo);
+        skipButton.onClick.AddListener(SkipVideo); // Lägg till en lyssnare till skipButton
     }
 
-    private void FastForwardVideo()
+    public void SkipVideo()
     {
         if (videoPlayer.isPlaying)
         {
-            videoPlayer.playbackSpeed = fastForwardSpeed; // Ändra uppspelningshastigheten för att snabbspola videon
+            videoPlayer.Stop(); // Stoppa videouppspelningen
+            LoadNextPart(); // Ladda nästa del av spelet eller applikationen
         }
     }
 
-    void OnDestroy()
+    public void LoadNextPart()
     {
-        // Glöm inte att ta bort lyssnaren när objektet förstörs
-        skipButton.onClick.RemoveListener(FastForwardVideo);
+ 
+        SceneManager.LoadScene(2);
+       
     }
 }
-
