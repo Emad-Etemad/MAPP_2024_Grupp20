@@ -690,6 +690,8 @@ GameObject:
   - component: {fileID: 404568243}
   - component: {fileID: 404568242}
   - component: {fileID: 404568241}
+  - component: {fileID: 404568245}
+  - component: {fileID: 404568244}
   m_Layer: 5
   m_Name: ChoiceThree
   m_TagString: Untagged
@@ -770,7 +772,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Scene11
+          m_StringArgument: Scene10_Bully3
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1319100368}
@@ -823,6 +825,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 404568239}
   m_CullTransparentMesh: 1
+--- !u!114 &404568244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404568239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547a3e148a073be45b26c0cabbbaa4c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayBeforeFadeIn: 1
+  fadeInDuration: 1
+--- !u!225 &404568245
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404568239}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &477144296
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,6 +997,8 @@ GameObject:
   - component: {fileID: 551902503}
   - component: {fileID: 551902502}
   - component: {fileID: 551902501}
+  - component: {fileID: 551902505}
+  - component: {fileID: 551902504}
   m_Layer: 5
   m_Name: ChoiceOne
   m_TagString: Untagged
@@ -1049,7 +1079,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Scene9
+          m_StringArgument: Scene11_Bully1
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1319100368}
@@ -1102,6 +1132,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551902499}
   m_CullTransparentMesh: 1
+--- !u!114 &551902504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551902499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547a3e148a073be45b26c0cabbbaa4c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayBeforeFadeIn: 1
+  fadeInDuration: 1
+--- !u!225 &551902505
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551902499}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &797226718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1359,6 +1415,8 @@ GameObject:
   - component: {fileID: 1391749984}
   - component: {fileID: 1391749983}
   - component: {fileID: 1391749982}
+  - component: {fileID: 1391749986}
+  - component: {fileID: 1391749985}
   m_Layer: 5
   m_Name: ChoiceTwo
   m_TagString: Untagged
@@ -1439,7 +1497,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Scene10
+          m_StringArgument: Scene9_Bully2
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1319100368}
@@ -1492,6 +1550,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391749980}
   m_CullTransparentMesh: 1
+--- !u!225 &1391749985
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391749980}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1391749986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391749980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547a3e148a073be45b26c0cabbbaa4c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayBeforeFadeIn: 1
+  fadeInDuration: 1
 --- !u!1 &1400417619
 GameObject:
   m_ObjectHideFlags: 0

@@ -37,7 +37,7 @@ public class SceneLoader : MonoBehaviour
             case SceneToLoad.Scene1:
                 return "Scene1";
             case SceneToLoad.Ending_3_Info:
-                return "Ending_3_Info";
+                return "Ending_4_Info";
             case SceneToLoad.Menu:
                 return "Menu";
             case SceneToLoad.Game_Over:

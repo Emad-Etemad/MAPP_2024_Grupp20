@@ -42,10 +42,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene8.unity
     guid: 01afbc601fb6d05418e08b736f585c4e
   - enabled: 1
-    path: Assets/Scenes/Scene9.unity
+    path: Assets/Scenes/Scene9_Bully2.unity
     guid: d6442fb2a45ea94408cc1d2519196cd3
   - enabled: 1
-    path: Assets/Scenes/Scene10.unity
+    path: Assets/Scenes/Scene10_Bully3.unity
     guid: a1de6b5626e6a9e41a6c1fad1b267f4f
   - enabled: 1
     path: Assets/Scenes/Ending_1.unity
