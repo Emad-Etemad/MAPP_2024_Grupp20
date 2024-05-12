@@ -951,7 +951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547a3e148a073be45b26c0cabbbaa4c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBeforeFadeIn: 6
+  delayBeforeFadeIn: 4
   fadeInDuration: 1
 --- !u!1 &669672023
 GameObject:
@@ -1492,7 +1492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547a3e148a073be45b26c0cabbbaa4c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBeforeFadeIn: 6
+  delayBeforeFadeIn: 4
   fadeInDuration: 1
 --- !u!1 &1475409175
 GameObject:

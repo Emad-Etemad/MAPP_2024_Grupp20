@@ -378,6 +378,7 @@ GameObject:
   m_Component:
   - component: {fileID: 301152596}
   - component: {fileID: 301152595}
+  - component: {fileID: 301152597}
   m_Layer: 0
   m_Name: Video_HeadToTheStairwell
   m_TagString: Untagged
@@ -436,6 +437,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &301152597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301152594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c4c0c8c892354f44b03ae6054028d6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeInTime: 3
 --- !u!1 &438694902
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,7 +880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547a3e148a073be45b26c0cabbbaa4c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBeforeFadeIn: 7
+  delayBeforeFadeIn: 4
   fadeInDuration: 3
 --- !u!114 &624492650
 MonoBehaviour:
@@ -1622,7 +1636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547a3e148a073be45b26c0cabbbaa4c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBeforeFadeIn: 7
+  delayBeforeFadeIn: 4
   fadeInDuration: 3
 --- !u!114 &2004013776
 MonoBehaviour:
@@ -1639,7 +1653,7 @@ MonoBehaviour:
   myButton: {fileID: 2004013771}
   backgroundVideoPlayer: {fileID: 612156521}
   buttonVideoPlayer: {fileID: 301152595}
-  sceneToLoad: Scene1
+  sceneToLoad: Scene2.0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

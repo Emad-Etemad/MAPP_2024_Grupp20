@@ -57,7 +57,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Ending_3.unity
     guid: fba05d414c6ef9246b7a3cf5a5394825
   - enabled: 1
-    path: Assets/Scenes/Ending_3_Info.unity
+    path: Assets/Scenes/Ending_4_Info.unity
     guid: a3d99500b9e7cef41a657a986cf19409
   - enabled: 1
     path: Assets/Scenes/Game_Over.unity
