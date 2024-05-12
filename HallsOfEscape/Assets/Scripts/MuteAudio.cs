@@ -6,7 +6,7 @@ public class MuteAudio : MonoBehaviour
 {
     public void MuteHandler(bool mute) 
     {
-        if(mute)
+        if(!mute)
         {
             AudioListener.volume = 0f;   
         }
