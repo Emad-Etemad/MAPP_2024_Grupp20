@@ -16,7 +16,7 @@ EditorBuildSettings:
     guid: 9481e9cdb6f0f4952ac2b48274ab5f0e
   - enabled: 1
     path: Assets/Scenes/Scene2.0.unity
-    guid: 185a74c4045d044ab8a6986fb8d39415
+    guid: 37538e5f9e133415ab8a2f7957ff7cfb
   - enabled: 1
     path: Assets/Scenes/Scene2.0_Loop.unity
     guid: 0a908a443d2eb074ea79fe43fb3a8004
@@ -47,6 +47,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene10_Bully3.unity
     guid: a1de6b5626e6a9e41a6c1fad1b267f4f
+  - enabled: 1
+    path: Assets/Scenes/Scene11_Bully1.unity
+    guid: 86e0371060f0db1488638213a9c0bf41
   - enabled: 1
     path: Assets/Scenes/Ending_1.unity
     guid: b2bfd30583c425b4694afb96cca194ef
