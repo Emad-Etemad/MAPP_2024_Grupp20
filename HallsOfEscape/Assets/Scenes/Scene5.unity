@@ -838,7 +838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547a3e148a073be45b26c0cabbbaa4c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBeforeFadeIn: 5
+  delayBeforeFadeIn: 4
   fadeInDuration: 1
 --- !u!225 &551902505
 CanvasGroup:
@@ -1387,7 +1387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547a3e148a073be45b26c0cabbbaa4c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBeforeFadeIn: 5
+  delayBeforeFadeIn: 4
   fadeInDuration: 1
 --- !u!225 &1391749986
 CanvasGroup:

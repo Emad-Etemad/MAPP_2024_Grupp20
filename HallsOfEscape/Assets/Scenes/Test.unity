@@ -508,6 +508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8881f7bb50ac94af6b273e7effdbf703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myButton: {fileID: 0}
   backgroundVideoPlayer: {fileID: 1428146977}
   buttonVideoPlayer: {fileID: 1024528114}
   sceneToLoad: Scene2.0

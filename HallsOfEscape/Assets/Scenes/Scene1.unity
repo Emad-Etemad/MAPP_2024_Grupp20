@@ -665,7 +665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547a3e148a073be45b26c0cabbbaa4c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBeforeFadeIn: 5
+  delayBeforeFadeIn: 3
   fadeInDuration: 3
 --- !u!114 &551902506
 MonoBehaviour:
@@ -776,7 +776,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937625589}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 342ec99df711a4853a13dec32d3f0737, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 1f581b87a1e974315a4fc484d4f1d33f, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1511968809}
@@ -1112,7 +1112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547a3e148a073be45b26c0cabbbaa4c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBeforeFadeIn: 5
+  delayBeforeFadeIn: 3
   fadeInDuration: 3
 --- !u!114 &1391749987
 MonoBehaviour:
