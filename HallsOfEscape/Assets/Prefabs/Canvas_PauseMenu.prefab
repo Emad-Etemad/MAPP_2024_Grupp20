@@ -54,7 +54,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 384142017021598119}
-  videoPlayer: {fileID: 0}
 --- !u!1 &430441571667799414
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,7 +297,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 54b57960b7f91024099434c3dedef9e7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 417ae1364d5f9e04fbe57c44fbd576ad, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -643,7 +642,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 417ae1364d5f9e04fbe57c44fbd576ad, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 54b57960b7f91024099434c3dedef9e7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
