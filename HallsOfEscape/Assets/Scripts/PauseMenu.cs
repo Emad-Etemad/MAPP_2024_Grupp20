@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,7 @@ using UnityEngine.Video;
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
+
     private bool isGamePaused;
 
     void Update()
@@ -43,13 +45,13 @@ public class PauseMenu : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        Time.timeScale = 1f; 
+        Time.timeScale = 1f;
     }
 
     public void Menu()
     {
         SceneManager.LoadScene(0);
-        Time.timeScale = 1f; 
+        Time.timeScale = 1f;
     }
 
     private void PauseAllVideoPlayers()
@@ -72,4 +74,4 @@ public class PauseMenu : MonoBehaviour
         }
     }
 }
- 
+
