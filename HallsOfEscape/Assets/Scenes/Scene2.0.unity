@@ -393,7 +393,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301152594}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: fd69d0f0f11ee48889566441e692a7b9, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 09a7919183f7d41219515dae38d85fc5, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1916079783}
@@ -884,6 +884,50 @@ MonoBehaviour:
   backgroundVideoPlayer: {fileID: 612156521}
   buttonVideoPlayer: {fileID: 786797713}
   sceneToLoad: Scene6
+--- !u!1 &635378144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 635378145}
+  - component: {fileID: 635378146}
+  m_Layer: 0
+  m_Name: ScenController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &635378145
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635378144}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 320.48212, y: 290.86008, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &635378146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635378144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16adcd4a1fa20a34ebc68ba211072027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &786797712
 GameObject:
   m_ObjectHideFlags: 0
@@ -1560,6 +1604,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 635378146}
+        m_TargetAssemblyTypeName: SceneManagerScript, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Scene2.0_Loop
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2004013772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1639,7 +1695,7 @@ MonoBehaviour:
   myButton: {fileID: 2004013771}
   backgroundVideoPlayer: {fileID: 612156521}
   buttonVideoPlayer: {fileID: 301152595}
-  sceneToLoad: Scene2.0
+  sceneToLoad: Scene2.0_Loop
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1654,3 +1710,4 @@ SceneRoots:
   - {fileID: 69793678}
   - {fileID: 263758671}
   - {fileID: 1012167532}
+  - {fileID: 635378145}
