@@ -1345,6 +1345,55 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1785244688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1785244690}
+  - component: {fileID: 1785244689}
+  m_Layer: 0
+  m_Name: Blurry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1785244689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785244688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: afee4c9c20d7b8e408aa844a9f998144, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
+--- !u!4 &1785244690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785244688}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 430.01718, y: 238.78877, z: 2.984454}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1997256181
 GameObject:
   m_ObjectHideFlags: 0
@@ -1689,10 +1738,18 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7645917940419082541, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8274950895149083363, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 1511968809}
+    - target: {fileID: 8274950895149083363, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
+      propertyPath: blurProfile
+      value: 
+      objectReference: {fileID: 11400000, guid: afee4c9c20d7b8e408aa844a9f998144, type: 2}
     - target: {fileID: 8274950895149083363, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
       propertyPath: videoPlayer
       value: 
@@ -1700,9 +1757,37 @@ PrefabInstance:
     - target: {fileID: 8274950895149083363, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
       propertyPath: postProcessVolume
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1785244689}
     - target: {fileID: 8274950895149083363, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
       propertyPath: postProcessingVolume
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8653147427200071349, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8653147427200071349, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b9ca905bac13694ea03a2791bc3a1db, type: 3}
+    - target: {fileID: 8653147427200071349, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
+      propertyPath: m_Color.a
+      value: 0.8784314
+      objectReference: {fileID: 0}
+    - target: {fileID: 8653147427200071349, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
+      propertyPath: m_Color.b
+      value: 0.2264151
+      objectReference: {fileID: 0}
+    - target: {fileID: 8653147427200071349, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
+      propertyPath: m_Color.g
+      value: 0.2264151
+      objectReference: {fileID: 0}
+    - target: {fileID: 8653147427200071349, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
+      propertyPath: m_Color.r
+      value: 0.2264151
+      objectReference: {fileID: 0}
+    - target: {fileID: 8653147427200071349, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
+      propertyPath: m_Material
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1724,3 +1809,4 @@ SceneRoots:
   - {fileID: 818845628}
   - {fileID: 1589704453}
   - {fileID: 1144251244}
+  - {fileID: 1785244690}
