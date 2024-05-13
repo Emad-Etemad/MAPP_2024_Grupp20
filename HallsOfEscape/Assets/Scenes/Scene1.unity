@@ -231,7 +231,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8274950895149083363, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
   m_PrefabInstance: {fileID: 5583396497768192183}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152399973}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22284caa674172448a1d505ff91160cd, type: 3}
@@ -947,11 +947,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1152399973 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 384142017021598119, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
-  m_PrefabInstance: {fileID: 5583396497768192183}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1391749980
 GameObject:
   m_ObjectHideFlags: 0
@@ -1491,9 +1486,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2040051514}
-  - component: {fileID: 2040051515}
   - component: {fileID: 2040051516}
-  - component: {fileID: 2040051517}
   m_Layer: 0
   m_Name: Video Player0
   m_TagString: VideoPlayer
@@ -1516,19 +1509,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2040051515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2040051512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22284caa674172448a1d505ff91160cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 1152399973}
 --- !u!328 &2040051516
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -1565,19 +1545,6 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
---- !u!114 &2040051517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2040051512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22284caa674172448a1d505ff91160cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 1152399973}
 --- !u!1001 &5583396497768192183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1723,11 +1690,19 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8274950895149083363, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1511968809}
+    - target: {fileID: 8274950895149083363, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
       propertyPath: videoPlayer
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8274950895149083363, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
       propertyPath: postProcessVolume
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274950895149083363, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
+      propertyPath: postProcessingVolume
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -1,14 +1,14 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
-
+  
     private bool isGamePaused;
 
     void Update()
@@ -22,11 +22,15 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+ 
+
     public void Pause()
     {
         isGamePaused = true;
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
+
+        
 
         //Pausa alla videospelare i scenen
         PauseAllVideoPlayers();
@@ -37,6 +41,8 @@ public class PauseMenu : MonoBehaviour
         isGamePaused = false;
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
+
+     
 
         //Återuppta alla videospelare i scenen
         ResumeAllVideoPlayers();
