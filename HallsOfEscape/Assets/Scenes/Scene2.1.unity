@@ -782,7 +782,6 @@ GameObject:
   - component: {fileID: 942250588}
   - component: {fileID: 942250587}
   - component: {fileID: 942250586}
-  - component: {fileID: 942250589}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -840,24 +839,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &942250589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 942250585}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5ae38bbb14a749d29c7c343c717708f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 0}
-  inactiveImage: {fileID: 0}
-  timerText: {fileID: 980540676}
-  pb: {fileID: 0}
-  firstImage: {fileID: 683002777}
-  secondImage: {fileID: 1221844573}
 --- !u!1 &980540675
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,11 +983,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 980540675}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 765aab094ddfe4515ac33e9f187ee43a, type: 3}
+  m_Script: {fileID: 11500000, guid: c5ae38bbb14a749d29c7c343c717708f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inactiveImage: {fileID: 980540675}
+  pauseMenuUI: {fileID: 0}
+  inactiveImage: {fileID: 0}
   timerText: {fileID: 980540676}
+  pb: {fileID: 0}
+  firstImage: {fileID: 2100587374}
+  secondImage: {fileID: 2100587374}
 --- !u!1 &1143127717
 GameObject:
   m_ObjectHideFlags: 0
@@ -1671,7 +1656,7 @@ PrefabInstance:
     - target: {fileID: 4596424678591594861, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 942250589}
+      objectReference: {fileID: 0}
     - target: {fileID: 4596424678591594861, guid: 83a5805a9669d91458b3cf29f436f949, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
