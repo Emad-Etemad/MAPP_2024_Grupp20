@@ -5,6 +5,7 @@ public class DeleteLoadButton : MonoBehaviour
 {
     public Button loadButton;
 
+
     void Start()
     {
         Button btn = GetComponent<Button>();
