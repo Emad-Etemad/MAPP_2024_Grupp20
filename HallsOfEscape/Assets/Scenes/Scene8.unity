@@ -908,7 +908,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Confront Bully 2
+  m_text: Confront bully 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf5acadf7da1fe44696dc900a0453d77, type: 2}
   m_sharedMaterial: {fileID: -3046093953613077474, guid: bf5acadf7da1fe44696dc900a0453d77, type: 2}
