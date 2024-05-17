@@ -9,6 +9,12 @@ public class LoadButton : MonoBehaviour
     {
         Button btn = GetComponent<Button>();
         btn.onClick.AddListener(LoadGame);
+
+        // Gör knappen icke interaktiv om ingen sparad data finns
+        if (!PlayerPrefs.HasKey("SavedScene"))
+        {
+            btn.interactable = false;
+        }
     }
 
     void LoadGame()
