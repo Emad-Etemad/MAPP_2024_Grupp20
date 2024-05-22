@@ -10,7 +10,7 @@ public class Scene2_1_Controller : MonoBehaviour
     //public GameObject playButton;    // Referens till Play-knappen för att återuppta spelet
     public GameObject inactiveImage;
     public TextMeshProUGUI timerText;
-    private float countdown = 100f;
+    private float countdown = 30f;
     private bool isGamePaused = false;
 
     //public CanvasGroup uiCanvasGroup; // Används för att hantera interaktiviteten för all UI utom Play-knappen
@@ -19,7 +19,7 @@ public class Scene2_1_Controller : MonoBehaviour
 
     public void Start()
     {
-        countdown = 100f;  // Reset countdown to initial value
+        countdown = 30f;  // Reset countdown to initial value
         StartCoroutine(CountdownTimer());
     }
 
