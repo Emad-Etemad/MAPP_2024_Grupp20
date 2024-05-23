@@ -1431,7 +1431,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 801620474}
-  videoPlayer: {fileID: 0}
 --- !u!114 &1975321235
 MonoBehaviour:
   m_ObjectHideFlags: 0
