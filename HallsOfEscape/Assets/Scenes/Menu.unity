@@ -7632,7 +7632,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.9622642, g: 0.81268406, b: 0.30411178, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 0.92009985, b: 0.7216981, a: 1}
     m_PressedColor: {r: 0.6320754, g: 0.5059314, b: 0.09838911, a: 1}
     m_SelectedColor: {r: 0.735849, g: 0.60339624, b: 0.18396226, a: 1}
@@ -7651,7 +7651,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1123128450}
+  m_TargetGraphic: {fileID: 2127345300}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -8665,7 +8665,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1582663756
 RectTransform:
   m_ObjectHideFlags: 0
