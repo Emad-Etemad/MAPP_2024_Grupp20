@@ -1,15 +1,14 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
-  
+
     private bool isGamePaused;
+    private List<VideoPlayer> pausedVideoPlayers = new List<VideoPlayer>();
 
     void Update()
     {
@@ -22,16 +21,13 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-
     public void Pause()
     {
         isGamePaused = true;
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
 
-        
-
-        //Pausa alla videospelare i scenen
+        // Pause all video players in the scene
         PauseAllVideoPlayers();
     }
 
@@ -41,10 +37,8 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
 
-     
-
-        //Återuppta alla videospelare i scenen
-        ResumeAllVideoPlayers();
+        // Resume only the video players that were paused
+        ResumePausedVideoPlayers();
     }
 
     public void Restart()
@@ -61,22 +55,27 @@ public class PauseMenu : MonoBehaviour
 
     private void PauseAllVideoPlayers()
     {
+        pausedVideoPlayers.Clear();
         VideoPlayer[] videoPlayers = FindObjectsOfType<VideoPlayer>();
         foreach (VideoPlayer player in videoPlayers)
         {
             if (player.isPlaying)
+            {
                 player.Pause();
+                pausedVideoPlayers.Add(player);
+            }
         }
     }
 
-    private void ResumeAllVideoPlayers()
+    private void ResumePausedVideoPlayers()
     {
-        VideoPlayer[] videoPlayers = FindObjectsOfType<VideoPlayer>();
-        foreach (VideoPlayer player in videoPlayers)
+        foreach (VideoPlayer player in pausedVideoPlayers)
         {
-            if (!player.isPlaying)
+            if (player != null && !player.isPlaying)
+            {
                 player.Play();
+            }
         }
+        pausedVideoPlayers.Clear();
     }
 }
-
