@@ -27,7 +27,6 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
 
-        // Pause all video players in the scene
         PauseAllVideoPlayers();
     }
 
@@ -37,7 +36,6 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
 
-        // Resume only the video players that were paused
         ResumePausedVideoPlayers();
     }
 
