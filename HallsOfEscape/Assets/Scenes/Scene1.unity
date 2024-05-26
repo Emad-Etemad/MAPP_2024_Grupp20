@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 207697346}
   - component: {fileID: 207697348}
   - component: {fileID: 207697347}
+  - component: {fileID: 207697349}
   m_Layer: 5
   m_Name: MotivationShape
   m_TagString: Untagged
@@ -303,6 +304,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207697345}
   m_CullTransparentMesh: 1
+--- !u!95 &207697349
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207697345}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f2d292c002d4a4b64bd480d6cdf590e6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &305604542
 GameObject:
   m_ObjectHideFlags: 0
